@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div style="background: rgba(255, 255, 255, 0.5);text-align: center; height:60px;" class="shadow rounded">
+    <header>
+    <img src="../static/fer/img/rgb-logo.png" height="52px" class="title-logo m-1"> 
+<!-- <pre class="d-inline" style="margin: 0px; padding: 0px;"> -->
+    
+<h1 class="d-inline" style="width:50px;">
+    
+    <span>Facial Expression Recognition</span>
+</h1>
+<!-- </pre> -->
+</header>
+</div>
+<br>
+<br>
+<div style="padding-left: 220px; width:500px;height:100px; text-align: center; margin-left: 400px; margin-top: 420px; ">
+    <button type="button" class="btn btn-dark"> 
+    <a href="{% url 'start-camera' %}" style="color: inherit; text-decoration: none;">
+        Start Camera
+    </a>
+</button>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<button type="button" class="btn btn-dark"> 
+    <a href="{% url 'stop-camera' %}" style="color: inherit; text-decoration: none;">
+        Stop Camera
+    </a>
+</button>
+
+</div>
+
+
+{% endblock %}

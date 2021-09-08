@@ -1,0 +1,1 @@
+web: gunicorn facialEmotion.wsgi --log-file -
